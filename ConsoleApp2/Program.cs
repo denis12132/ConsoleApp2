@@ -16,7 +16,8 @@ class Program
             z = F % 10;
 
             K = F / (x + y + z);
-            if (K < max)
+            if (K > max)
+                //Я изменил знак на самое большое число на самое маленькое//
             {
                 max = K;
                 count = F;
@@ -26,5 +27,6 @@ class Program
         Console.WriteLine("\nНаибольшее значение -> {0}", count);
 
         Console.ReadLine();
+        //это самое большое число//
     }
 }
